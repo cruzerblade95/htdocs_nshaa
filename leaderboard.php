@@ -36,47 +36,93 @@
             <div class="col-xs-12 col-lg-12">
                 <div class="card" data-mdb-toggle="animation" data-mdb-animation-reset="true"
                     data-mdb-animation="slide-right">
-                    <h5 class="card-title mt-3">User Leaderboards</h5>
+                    <h1 class="card-title mt-3">User Leaderboards</h1>
                     <div class="card-body">
 
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">id</th>
-                                    <th scope="col">Username</th>
-                                    <th scope="col">Score</th>
-                                    <th scope="col">Quiz No.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
+                        <div class="row">
+                            <h3>Quiz 1</h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Score</th>
+                                        <th scope="col">Quiz No.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+    
+                            $sql = "SELECT * FROM quiz WHERE quizNo=1 ORDER BY score DESC LIMIT 5";
+                            $result = mysqli_query($con, $sql);
+    
+                            while($row = mysqli_fetch_assoc($result)) {  
+                            ?>
+    
+                                    <tr>
+                                        <th>
+                                            <?php echo $row['id']; ?>
+                                        </th>
+                                        <td>
+                                            <?php echo $row['username']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $row['score']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $row['quizNo']; ?>
+                                        </td>
+                                    </tr>
+    
+                                    <?php
+                            }
+                            ?>
+                                </tbody>
+                            </table>
+                        </div>
 
-                        $sql = "SELECT * FROM quiz";
-                        $result = mysqli_query($con, $sql);
+                        <div class="row mt-3">
+                            <h3>Quiz 2</h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Score</th>
+                                        <th scope="col">Quiz No.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+    
+                            $sql = "SELECT * FROM quiz WHERE quizNo=2 ORDER BY score DESC LIMIT 5";
+                            $result = mysqli_query($con, $sql);
+    
+                            while($row = mysqli_fetch_assoc($result)) {  
+                            ?>
+    
+                                    <tr>
+                                        <th>
+                                            <?php echo $row['id']; ?>
+                                        </th>
+                                        <td>
+                                            <?php echo $row['username']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $row['score']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $row['quizNo']; ?>
+                                        </td>
+                                    </tr>
+    
+                                    <?php
+                            }
+                            ?>
+                                </tbody>
+                            </table>
+                        </div>
 
-                        while($row = mysqli_fetch_array($result)) {  
-                        ?>
-
-                                <tr>
-                                    <th scope="row">
-                                        <?php echo $row['id']; ?>
-                                    </th>
-                                    <td>
-                                        <?php echo $row['username']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $row['score']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $row['quizNo']; ?>
-                                    </td>
-                                </tr>
-
-                                <?php
-                        }
-                        ?>
-                            </tbody>
-                        </table>
                         <!-- <h1>DI BAWAH ADALAH SYARAT UNTUK MENJAWAB QUIZ:</h1><br><br>
 						<P>1. Peserta diwajibkan untuk membaca risalah RSG Medicare sebelum menjawab.</p>
 						<p>2. Peserta diwajibkan untuk menonton video program Bicara Pakar Dari Bumi di YT Channel.</p>

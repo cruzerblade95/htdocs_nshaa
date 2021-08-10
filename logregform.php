@@ -16,7 +16,14 @@ if(isset($_POST['login'])){
      if(mysqli_num_rows($result)==1){
         //   echo "You Have Successfuly Logged in";
 		$_SESSION["username"] = $uname;
-		echo "<script>alert('You Have Successfuly Logged in'); window.location.href='indexlogin.php';</script>";
+		while($row = mysqli_fetch_array($result)) {
+
+			if($row['isAdmin'] == 1){
+				echo "<script>alert('You Have Successfuly Logged in'); window.location.href='./admin/index.php';</script>";
+			}else{
+				echo "<script>alert('You Have Successfuly Logged in'); window.location.href='indexlogin.php';</script>";
+			}
+		}
      }
      else{
         //   echo "You Have Entered Incorrect Password";

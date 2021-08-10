@@ -1,0 +1,402 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/* background: #42455a; */
+}
+
+.html{
+	background: #42455a;
+}
+
+.navbar-toggler-icons{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
+}
+
+.container{
+	background: #42455a;
+	/* width: 100%; */
+	height: 100%;
+	
+	animation: transitionIn 0.75s;
+}
+
+.selection-button{
+	margin-top: 100px;
+}
+.selection-button a{
+	text-decoration: none;
+	color: #fff;
+}
+.selection-button a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+body{
+	background-color: #42455a !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #42455a;
+  color: #fcdf25 !important;
+  text-align: center;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.card{
+	border-radius: 100px;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.card-body{
+	border-radius: 100px;
+	background-color: #fff !important;
+}
+
+.menu ul{
+	display: inline-flex;
+	margin: 10px;
+	padding-top: 30px;	
+}
+
+.menu ul li{
+	list-style:none;
+	margin: 0 20px;
+	color: #b2b1b1;
+	cursor: pointer;
+	
+}
+
+.menu ul li a{
+	list-style:none;
+	color: #b2b1b1;
+}
+
+.menu ul li a:hover{
+	list-style:none;
+	color: #fcdf25;
+}
+
+.logo img{
+	width: 70px;
+	margin-top: -25px;
+	margin-right: 40px;
+}
+
+.active{
+	color: #fcdf25 !important;
+}
+
+.logreg{
+	top: 30px;
+	right: 80px;
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	border: 10px solid transparent;
+	border-radius: 30px;
+	background-image: linear-gradient(#fcdf25,#fcdf25);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+}
+
+.logreg span{
+	display: block;
+	padding: 8px 22px;
+}
+
+.banner {
+	width: 40%;
+	height: 50%;
+	top: 25%;
+	left: 130px;
+	position: absolute;
+	color: #fcdf25;
+	border: 50px solid transparent;
+	border-radius: 100px;
+	background-image: linear-gradient(#fff,#fff);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+}
+
+.headertext span{
+	display: block;
+	padding: 30px 30px;
+}
+
+#headertext h1{
+	color: #fcdf25;
+	text-shadow: 2px 2px #000000;
+	font-size: 90px;
+	width: 100%;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+#headertext p{
+	color: #fcdf25;
+	text-shadow: 2px 2px #000000;
+	font-size: 30px;
+	width: 100%;
+	position: relative;
+	margin-left: 20px;
+}
+
+#headertext p1{
+	color: #fcdf25;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	width: 640px;
+	position: relative;
+	margin-left: 20px;
+}
+
+
+.headerphoto{
+	width: 50%;
+	float: right;
+}
+
+.headerphoto img{
+	width: 200%;
+	margin-top: -400px;
+	padding-left: 100px;
+	margin-left: 200px;
+}
+
+.menu1 ul{
+	display: inline-flex;
+	margin: 50px;
+}
+
+.menu1 ul li{
+	list-style:none;
+	margin: 0 20px;
+	color: #b2b1b1;
+	cursor: pointer;
+	
+}
+	
+	
+	
+	
+	
+
+.rules{
+	top: 350px;
+	left: 0;
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	border: 10px solid transparent;
+	border-radius: 30px;
+	background-image: linear-gradient(#fcdf25,#fcdf25);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+}
+
+.rules span{
+	display: block;
+	padding: 8px 22px;
+}
+
+
+.quiz1{
+	top: 350px;
+	left: 50%;
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	border: 10px solid transparent;
+	border-radius: 30px;
+	background-image: linear-gradient(#fcdf25,#fcdf25);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+}
+
+.quiz1 span{
+	display: block;
+	padding: 8px 22px;
+}
+
+.quiz2{
+	top: 350px;
+	left: 75%;
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	border: 10px solid transparent;
+	border-radius: 30px;
+	background-image: linear-gradient(#fcdf25,#fcdf25);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+}
+
+.quiz2 span{
+	display: block;
+	padding: 8px 22px;
+}
+
+.rulestext h1{
+	font-size: 50px;
+	width: 700px;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 30px;
+	color: #fcdf25;
+}
+
+.rulestext p{
+	font-size: 25px;
+	width: 640px;
+	position: relative;
+	margin-left: 20px;
+	color: #42455a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/logregbg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	
+}
+
+.form-box{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	border-radius: 30px;
+	margin: 6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+
+.toggle-button{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	
+}
+
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #fcdf25,#ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.social-icons{
+	margin: 30px auto;
+	text-align: center;
+}
+
+.social-icons img{
+	width: 30px;
+	margin: 0 12px;
+	box-shadow: 0 0 20px 0 #7f7f7f3d;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.input-group{
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+
+}
+
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #fcdf25,#ffad06);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.check-box{
+	margin: 30px 10px 30px 0;
+
+	
+}
+
+.check-box span{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+
+#login{
+	left: 50px;
+}
+
+#register{
+	left: 450px;
+}
+
